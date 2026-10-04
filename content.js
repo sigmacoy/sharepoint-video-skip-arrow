@@ -63,6 +63,13 @@
         playPauseBtn.click();
         e.preventDefault();
       }
+    } else if (e.key.toLowerCase() === "f") { 
+      // Added 'f' or 'F' for Full screen (accounts for exit full screen as well)
+      const fullscreenBtn = document.querySelector('button[aria-label="Full screen"], button[aria-label="Exit full screen"]');
+      if (fullscreenBtn) {
+        fullscreenBtn.click();
+        e.preventDefault();
+      }
     }
   });
 })();

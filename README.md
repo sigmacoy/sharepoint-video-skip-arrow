@@ -6,7 +6,7 @@ Nobody wants to stretch their fingers for cumbersome default shortcuts just to s
 
 ## Features
 
-- **Intuitive Seeking:** Use `←` to skip back 10s and `→` to skip forward 10s.
+- **Intuitive Seeking:** Use `←` to skip back 10s and `→` to skip forward 10s and `F` to fullscreen.
 - **Input & Shortcut Safe:** Automatically ignores arrow presses when typing in comments, search bars, or text fields, as well as when holding modifier keys (Shift, Ctrl, Alt, Cmd).
 - **Lightweight:** Pure JavaScript content script (Manifest V3) with zero external dependencies.
 
