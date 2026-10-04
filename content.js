@@ -51,6 +51,10 @@
       if (clickButtonBySvgPath(BACKWARD_PATH)) {
         e.preventDefault();
       }
+    } else if (e.key === " ") { // Space bar event for Play/Pause
+      if (clickButtonBySvgPath(PLAY_PATH)) {
+        e.preventDefault();
+      }
     }
   });
 })();
