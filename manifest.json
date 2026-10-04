@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SharePoint Video Skip Arrow",
+  "version": "1.0",
+  "description": "Skip 10 seconds forward and backward using arrow keys in SharePoint videos.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.sharepoint.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
