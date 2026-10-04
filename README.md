@@ -11,3 +11,12 @@ Nobody wants to stretch their fingers for cumbersome default shortcuts just to s
 - **Lightweight:** Pure JavaScript content script (Manifest V3) with zero external dependencies.
 
 ---
+
+## Installation & Usage
+
+1. **Download:** Click **Code** > **Download ZIP** on this GitHub repo, then unzip it into a folder (or clone it).
+2. **Open Extensions:** In your browser (Chrome, Edge, Brave), go to:
+   - `chrome://extensions/` or `edge://extensions/`
+3. **Enable Developer Mode:** Turn on the **Developer mode** toggle in the top-right corner.
+4. **Load Unpacked:** Click the **Load unpacked** button and select the unzipped project folder (the one containing `manifest.json`).
+5. **Refresh & Enjoy:** Refresh your Microsoft 365 SharePoint video tab—tada! You can now use `←` and `→` to skip 10 seconds.
