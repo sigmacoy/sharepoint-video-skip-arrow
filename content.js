@@ -1,4 +1,9 @@
 (() => {
+  // Only run on sharepoint.com domains
+  if (!window.location.hostname.endsWith(".sharepoint.com")) {
+    return;
+  }
+
   const FORWARD_PATH = "M17 3.5a.5.5 0 1 0-1 0v2.2A8 8 0 0 0 2.84 7.45";
   const BACKWARD_PATH = "M3 3.5a.5.5 0 1 1 1 0v2.2a8 8 0 0 1 13.16 1.75";
 
@@ -51,8 +56,11 @@
       if (clickButtonBySvgPath(BACKWARD_PATH)) {
         e.preventDefault();
       }
-    } else if (e.key === " ") { // Space bar event for Play/Pause
-      if (clickButtonBySvgPath(PLAY_PATH)) {
+    } else if (e.key === " ") { 
+      // Use aria-label because the SVG path changes when it switches to "Pause"
+      const playPauseBtn = document.querySelector('button[aria-label="Play"], button[aria-label="Pause"]');
+      if (playPauseBtn) {
+        playPauseBtn.click();
         e.preventDefault();
       }
     }
